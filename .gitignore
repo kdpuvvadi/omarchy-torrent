@@ -1,0 +1,22 @@
+# Middleman
+.cache
+.DS_Store
+build/
+dist/
+node_modules/
+*.gem
+*.rbc
+.bundle
+vendor/bundle
+docs
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

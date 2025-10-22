@@ -8,7 +8,7 @@ node_modules/
 *.rbc
 .bundle
 vendor/bundle
-docs
+docs/*
 
 # Environment
 .env

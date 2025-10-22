@@ -119,7 +119,7 @@ body {
 
 .latest-badge {
   display: inline-block;
-  background-color: var(--hero-text-color);
+  background-color: var(--color-accent);
   color: var(--color-primary);
   padding: var(--spacing-xs) var(--spacing-md);
   border-radius: 20px;

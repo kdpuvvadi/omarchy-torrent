@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= site_config["title"] %> - Torrent distribution for Omarchy%></title>
+  <meta name="description" content="Torrent distribution for <%= site_config["description"] %>">
+  <link rel="icon" href="https://omarchy.org/assets/images/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="<%= site_config["title"] %> Releases" href="/feed.xml">
+  <%= stylesheet_link_tag "style" %>
+</head>
+<body>
+  <main class="main">
+    <%= yield %>
+  </main>
+
+  <footer class="footer">
+    <div class="container nav">
+      <p>&copy; 2025 <%= site_config["title"] %>. All rights reserved.</p>
+      <p><%= site_config["description"] %></p>
+      <p><a href="/feed.xml" target="_blank">RSS Feed</a></p>
+      <p><a href="<%= site_config["author_url"] %>" target="_blank">Maintainend by <%= site_config["author"] %></a></p>
+    </div>
+  </footer>
+</body>
+</html>

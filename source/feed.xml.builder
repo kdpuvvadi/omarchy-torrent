@@ -10,7 +10,7 @@ xml.rss version: "2.0", "xmlns:content" => "http://purl.org/rss/1.0/modules/cont
     releases.each do |release|
       xml.item do
         xml.title "#{site_config['title']} #{release['version']}"
-        xml.link release["release_url"] if release["release_url"]
+        xml.link release["magnet_link"] if release["release_url"]
         xml.guid "#{site_config['url']}/releases/#{release['version']}"
         xml.pubDate Date.parse(release["release_date"]).rfc822
         xml.description do
@@ -23,6 +23,7 @@ xml.rss version: "2.0", "xmlns:content" => "http://purl.org/rss/1.0/modules/cont
             <ul>
               #{release['torrent_file'] ? "<li><a href=\"#{site_config['url']}#{release['torrent_file']}\">Download Torrent</a></li>" : ""}
               #{release['magnet_link'] ? "<li><a href=\"#{release['magnet_link']}\">Magnet Link</a></li>" : ""}
+              #{release['release_url'] ? "<li><a href=\"#{release['release_url']}\">Changelog</a></li>" : ""}
             </ul>
           }
         end

@@ -86,7 +86,6 @@ body {
 
 .hero {
   color: var(--color-accent);
-
 }
 
 .hero .container {
@@ -135,6 +134,19 @@ body {
   font-weight: 700;
   margin-bottom: var(--spacing-md);
   letter-spacing: 0.05em;
+}
+
+/* Add styling for links within latest-version section */
+.latest-version a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.latest-version a:hover {
+  color: var(--color-secondary);
+  text-shadow: 0 0 10px rgba(158, 206, 106, 0.3);
 }
 
 .latest-description {
@@ -253,6 +265,19 @@ body {
 .release-header h3 {
   font-size: 1.5rem;
   color: var(--color-text);
+}
+
+/* Add styling for version title links in release cards */
+.release-header h3 a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.release-header h3 a:hover {
+  color: var(--color-secondary);
+  text-shadow: 0 0 10px rgba(158, 206, 106, 0.3);
 }
 
 .release-date {
@@ -404,6 +429,197 @@ body {
   margin: var(--spacing-xs) 0;
 }
 
+/* Add styles for release detail pages */
+.release-detail {
+  padding: var(--spacing-xl) 0;
+  min-height: calc(100vh - 200px);
+}
+
+.release-detail-header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--color-secondary);
+}
+
+.release-detail-header h1 {
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.05em;
+}
+
+.release-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: var(--spacing-xl);
+}
+
+.release-detail-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.detail-section {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-lg);
+}
+
+.detail-section h2 {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-md);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.info-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.info-value {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  word-break: break-word;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.hash-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.hash-label {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 0.95rem;
+}
+
+.hash-value {
+  display: block;
+  background-color: var(--color-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  word-break: break-all;
+  font-family: "Courier New", monospace;
+  color: var(--color-text);
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+}
+
+.hash-help {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  opacity: 0.8;
+}
+
+.release-detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.sidebar-section {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-lg);
+  height: fit-content;
+  position: sticky;
+  top: var(--spacing-lg);
+}
+
+.sidebar-section h3 {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.releases-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.releases-list li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.releases-list li a:hover {
+  background-color: rgba(158, 206, 106, 0.1);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.releases-list li a.active {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
   .hero-title h1 {
     font-size: 2rem;
@@ -455,5 +671,29 @@ body {
   .btn {
     width: 100%;
     min-width: unset;
+  }
+
+  .release-detail-content {
+    grid-template-columns: 1fr;
+  }
+
+  .release-detail-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .sidebar-section {
+    position: static;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+  }
+
+  .btn-large {
+    width: 100%;
   }
 }

@@ -17,6 +17,11 @@ end
 # GitHub Pages configuration
 set :build_dir, "docs"
 
+CONFIG["releases"].each do |release|
+  proxy "/releases/v#{release['version']}/index.html", "/releases/release.html", 
+    locals: { release: release }, ignore: true
+end
+
 # Helpers
 helpers do
   def config
@@ -41,5 +46,9 @@ helpers do
 
   def format_size(size_string)
     size_string
+  end
+
+  def get_release(version)
+    CONFIG["releases"].find { |r| r["version"] == version }
   end
 end

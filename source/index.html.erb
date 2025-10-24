@@ -12,7 +12,9 @@ layout: layout
     <% if latest_release %>
       <div class="hero-latest">
         <div class="latest-badge">Latest Release</div>
-        <h2 class="latest-version">Version v<%= latest_release["version"] %></h2>
+        <h2 class="latest-version">
+          <a href="/releases/v<%= latest_release["version"] %>/">Version v<%= latest_release["version"] %></a>
+        </h2>
         <p class="latest-description"><%= latest_release["notes"] %></p>
         
         <div class="latest-details">
@@ -72,7 +74,9 @@ layout: layout
       <% releases.each do |release| %>
         <div class="release-card">
           <div class="release-header">
-            <h3>Version v<%= release["version"] %></h3>
+            <h3>
+              <a href="/releases/v<%= release["version"] %>/">Version v<%= release["version"] %></a>
+            </h3>
               <% if release["latest"] %>
               <div class="release-latest">
                 <span class="latest-tag">Latest</span>

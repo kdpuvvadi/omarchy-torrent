@@ -1,0 +1,101 @@
+---
+layout: layout
+---
+
+<% release = locals[:release] %>
+
+<section class="release-detail">
+  <div class="container">
+    <div class="release-detail-header">
+      <a href="/" class="back-link">← Back to Releases</a>
+      <h1>Version v<%= release["version"] %></h1>
+      <% if release["latest"] %>
+        <div class="latest-badge">Latest Release</div>
+      <% end %>
+    </div>
+
+    <div class="release-detail-content">
+      <div class="release-detail-main">
+        <div class="detail-section">
+          <h2>Release Information</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-label">Filename:</span>
+              <span class="info-value"><%= release["filename"] %></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Size:</span>
+              <span class="info-value"><%= format_size(release["size"]) %></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Released:</span>
+              <span class="info-value"><%= format_date(release["release_date"]) %></span>
+            </div>
+          </div>
+        </div>
+
+        <% if release["notes"] && release["notes"].strip != "" %>
+          <div class="detail-section">
+            <h2>Release Notes</h2>
+            <p><%= release["notes"] %></p>
+          </div>
+        <% end %>
+
+        <div class="detail-section">
+          <h2>Download Options</h2>
+          <div class="download-buttons">
+            <% if release["torrent_file"] %>
+              <a href="<%= release["torrent_file"] %>" class="btn btn-primary btn-large" download>
+                Torrent Download
+              </a>
+            <% end %>
+            
+            <% if release["magnet_link"] %>
+              <a href="<%= release["magnet_link"] %>" class="btn btn-secondary btn-large">
+                <svg class="magnet-icon" width="24" height="24" viewBox="0 0 70 70" fill="currentColor">
+                  <path d="M28.034,67.583c0,0-0.001,0-0.002,0c-6.566,0-12.757-2.835-17.432-7.509l-0.263-0.392c-9.815-9.814-9.815-25.845-0.003-35.655l15.58-15.613c0.375-0.375,0.884-0.602,1.414-0.602l0,0c0.53,0,1.039,0.203,1.414,0.578l11.473,11.47c0.781,0.781,0.781,2.045,0,2.827L26.899,36.001c-0.887,0.887-1.362,2.095-1.339,3.405c0.022,1.303,0.556,2.57,1.462,3.477c0.93,0.93,2.229,1.462,3.563,1.462c1.276,0,2.455-0.476,3.319-1.339l13.315-13.317c0.75-0.75,2.078-0.75,2.828,0l11.474,11.474c0.375,0.375,0.586,0.884,0.586,1.414s-0.211,1.039-0.586,1.414l-15.58,15.838C41.109,64.662,34.749,67.583,28.034,67.583z"/>
+                </svg>
+                Magnet Link
+              </a>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <h2>Verification</h2>
+          <div class="hash-section">
+            <p class="hash-label">SHA256 Checksum:</p>
+            <code class="hash-value"><%= release["sha256"] %></code>
+            <p class="hash-help">Use this checksum to verify the integrity of your download.</p>
+          </div>
+        </div>
+
+        <% if release["release_url"] %>
+          <div class="detail-section">
+            <a href="<%= release["release_url"] %>" class="btn btn-tertiary btn-large" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="release-detail-sidebar">
+        <div class="sidebar-section">
+          <h3>Other Releases</h3>
+          <ul class="releases-list">
+            <% releases.each do |r| %>
+              <li>
+                <a href="/releases/v<%= r["version"] %>/" class="<%= 'active' if r["version"] == release["version"] %>">
+                  v<%= r["version"] %>
+                  <% if r["latest"] %>
+                    <span class="badge">Latest</span>
+                  <% end %>
+                </a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

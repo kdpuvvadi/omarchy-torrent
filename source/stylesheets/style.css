@@ -136,7 +136,6 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* Add styling for links within latest-version section */
 .latest-version a {
   color: var(--color-accent);
   text-decoration: none;
@@ -147,6 +146,7 @@ body {
 .latest-version a:hover {
   color: var(--color-secondary);
   text-shadow: 0 0 10px rgba(158, 206, 106, 0.3);
+  text-decoration: underline;
 }
 
 .latest-description {
@@ -278,6 +278,8 @@ body {
 .release-header h3 a:hover {
   color: var(--color-secondary);
   text-shadow: 0 0 10px rgba(158, 206, 106, 0.3);
+  text-decoration: underline;
+
 }
 
 .release-date {
@@ -429,7 +431,6 @@ body {
   margin: var(--spacing-xs) 0;
 }
 
-/* Add styles for release detail pages */
 .release-detail {
   padding: var(--spacing-xl) 0;
   min-height: calc(100vh - 200px);

@@ -354,6 +354,8 @@ body {
   font-family: "Courier New", monospace;
   color: var(--color-text);
   overflow-x: auto;
+  text-transform: uppercase;
+
 }
 
 .release-actions {

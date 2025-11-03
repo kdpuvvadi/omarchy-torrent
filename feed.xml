@@ -5,7 +5,27 @@
     <link>https://omarchy.puvvadi.net</link>
     <description>Beautiful, Modern &amp;amp; Opinionated Linux by DHH</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Oct 2025 18:06:20 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Nov 2025 18:16:53 +0000</lastBuildDate>
+    <item>
+      <title>Omarchy 3.1.5</title>
+      <link>magnet:?xt=urn:btih:bcec829d0102e4782d98713b41b52eb3e9d64327&amp;dn=omarchy-3.1.5.iso&amp;tr=udp%3A%2F%2Ftracker.puvvadi.net%3A8000%2Fannounce&amp;tr=https%3A%2F%2Ftracker.puvvadi.net%2Fannounce&amp;tr=http%3A%2F%2Ftracker.linuxtracker.org%3A2710%2Fcb49e46146888f33046f528e8e7eea94%2Fannounce</link>
+      <guid>https://omarchy.puvvadi.net/releases/3.1.5</guid>
+      <pubDate>Mon, 3 Nov 2025 00:00:00 +0000</pubDate>
+      <description>
+        <![CDATA[
+            <h3>omarchy-3.1.5.iso</h3>
+            <p><strong>Size:</strong> 6.31 GiB</p>
+            <p><strong>Notes:</strong> </p>
+            <p><strong>SHA256:</strong> <code>92c417f153a1af112973f5af52104d9dd0442d270b0f241bf91a232dd2b5b8df</code></p>
+            <h4>Download Options:</h4>
+            <ul>
+              <li><a href="https://omarchy.puvvadi.net/torrents/omarchy-3.1.5.iso.torrent">Download Torrent</a></li>
+              <li><a href="magnet:?xt=urn:btih:bcec829d0102e4782d98713b41b52eb3e9d64327&dn=omarchy-3.1.5.iso&tr=udp%3A%2F%2Ftracker.puvvadi.net%3A8000%2Fannounce&tr=https%3A%2F%2Ftracker.puvvadi.net%2Fannounce&tr=http%3A%2F%2Ftracker.linuxtracker.org%3A2710%2Fcb49e46146888f33046f528e8e7eea94%2Fannounce">Magnet Link</a></li>
+              <li><a href="https://github.com/basecamp/omarchy/releases/tag/v3.1.5">Changelog</a></li>
+            </ul>
+          ]]>
+      </description>
+    </item>
     <item>
       <title>Omarchy 3.1.4</title>
       <link>magnet:?xt=urn:btih:45a5c86987608e3366e7601b518b4f03fb77e9d3&amp;dn=omarchy-3.1.4.iso&amp;xl=6781411328&amp;tr=http%3A%2F%2Ftracker.linuxtracker.org%3A2710%2Fcb49e46146888f33046f528e8e7eea94%2Fannounce&amp;ws=http://tracker.linuxtracker.org</link>

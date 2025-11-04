@@ -130,7 +130,7 @@ PLATFORMS
 DEPENDENCIES
   builder
   kramdown
-  middleman (~> 4.4)
+  middleman (~> 4.6)
   middleman-blog
   wdm (~> 0.2.0)
 

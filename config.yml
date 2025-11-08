@@ -7,6 +7,17 @@ site:
   author_url: "https://puvvadi.net"
 
 releases:
+  - version: "3.1.6"
+    filename: "omarchy-3.1.6.iso"
+    size: "6.2 GiB"
+    sha256: "39858b4f20f1db75a9dc81a4975a300ad72dddca6e8bdb70cc486ae6c3e621c2"
+    torrent_file: "/torrents/omarchy-3.1.6.iso.torrent"
+    magnet_link: ""
+    release_url: "https://github.com/basecamp/omarchy/releases/tag/v3.1.6"
+    release_date: "2025-11-07"
+    notes: ""
+    latest: true
+
   - version: "3.1.5"
     filename: "omarchy-3.1.5.iso"
     size: "6.41 GiB"
@@ -16,7 +27,7 @@ releases:
     release_url: "https://github.com/basecamp/omarchy/releases/tag/v3.1.5"
     release_date: "2025-11-03"
     notes: ""
-    latest: true
+    latest: false
   
   - version: "3.1.4"
     filename: "omarchy-3.1.4.iso"

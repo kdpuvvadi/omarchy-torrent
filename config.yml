@@ -7,6 +7,17 @@ site:
   author_url: "https://puvvadi.net"
 
 releases:
+  - version: "3.2.0"
+    filename: "omarchy-3.2.0.iso"
+    size: "6.17 GiB"
+    sha256: "6b6c085c20a0afee21401f15bfb04a4a5a8bd1d989186bf68f735a3781895390"
+    torrent_file: "/torrents/omarchy-3.2.0.iso.torrent"
+    magnet_link: "magnet:?xt=urn:btih:1aff6518897248421957298473b1bf516434242f&dn=omarchy-3.2.0.iso&xl=6631227392&tr=udp%3A%2F%2Ftracker.therarbg.to%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.qu.ax%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker2.dler.org%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.skillindia.site%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.plx.im%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zupix.online%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.hifimarket.in%3A2710%2Fannounce&tr=https%3A%2F%2Ftracker.puvvadi.net%2Fannounce&tr=udp%3A%2F%2Fttk2.nbaonlineservice.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.hifitechindia.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fwepzone.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.srv00.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.healthcareindia.store%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.tryhackx.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fudp.tracker.projectk.org%3A23333%2Fannounce&tr=udp%3A%2F%2Ftracker.theoks.net%3A6969%2Fannounce&ws=https://iso.omarchy.org/omarchy-3.2.0.iso"
+    release_url: "https://github.com/basecamp/omarchy/releases/tag/v3.2.0"
+    release_date: "2025-11-22"
+    notes: ""
+    latest: true
+
   - version: "3.1.7"
     filename: "omarchy-3.1.7.iso"
     size: "6.2 GiB"
@@ -16,7 +27,7 @@ releases:
     release_url: "https://github.com/basecamp/omarchy/releases/tag/v3.1.7"
     release_date: "2025-11-09"
     notes: ""
-    latest: true
+    latest: false
 
   - version: "3.1.6"
     filename: "omarchy-3.1.6.iso"
